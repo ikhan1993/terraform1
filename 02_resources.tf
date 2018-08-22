@@ -13,10 +13,11 @@ resource "google_compute_instance" "default" {
 	network_interface {
 		network = "default"
 		access_config {
-			// Ephemeral IP...this being empty a ip will be assigned...comment
+			// Ephemeral IP...this being empty a ip will be assigned auto...comment
 		}
 	}
 	
+	// creating a way to ssh into the machine of user terraform
 	metadata {
 		sshKeys = "terraform:${file("~/.ssh/id_rsa.pub")}"
 	}
@@ -26,8 +27,17 @@ resource "google_compute_instance" "default" {
 			user = "terraform"
 			private_key = "${file("~/.ssh/id_rsa")}"
 		}
-		inline = [
-			"sudo yum update -y"
+		// runs once vm created succesfully..executes 
+		// can have either inline or script 
+		//inline = [
+		//	"sudo yum update -y"
+		//]
+		
+		// example of script
+		scripts	= [
+			// must be bash scripts
+			"scripts/file1",
+			"scripts/file2"
 		]
 	}
 }

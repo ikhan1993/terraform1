@@ -28,16 +28,17 @@ resource "google_compute_instance" "default" {
 			private_key = "${file("~/.ssh/id_rsa")}"
 		}
 		// runs once vm created succesfully..executes 
-		// can have either inline or script 
+		// can have either inline or script  
 		//inline = [
-		//	"sudo yum update -y"
+		//	"sudo yum install -y git",
 		//]
 		
 		// example of script
 		scripts	= [
-			// must be bash scripts
+			// must be bash script
 			"scripts/file1",
-			"scripts/file2"
+			"scripts/file2",
+			"scripts/python-server" // from vagrant project 
 		]
 	}
 }

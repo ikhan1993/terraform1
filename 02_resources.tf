@@ -34,11 +34,6 @@ resource "google_compute_instance" "default" {
 		//]
 		
 		// example of script
-		scripts	= [
-			// must be bash script
-			"scripts/file1",
-			"scripts/file2",
-			"scripts/python-server" // from vagrant project 
-		]
+		scripts = "${var.script_list}"
 	}
 }

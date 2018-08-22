@@ -3,7 +3,7 @@
 
 variable "name" {
 	type = "string"
-	default = "default_QA_test"
+	default = "default-test"
 }
 
 variable "machine_type" {
@@ -34,4 +34,13 @@ variable "username" {
 variable "ssh" {
 	type = "string"
 	default = "ssh"
+}
+
+// below is for a list 
+variable "script_list" {
+	default = [
+		"scripts/python-server",
+		"scripts/file2",
+		"scripts/file1"
+	]
 }

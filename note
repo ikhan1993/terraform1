@@ -1,4 +1,10 @@
 to access the vm's go to 
 
 google gcp and log in 
-access the vm via the commute engine 
+access the vm via the commute engine
+
+to run do the following in terminal
+
+vagrant init 
+vagrant plan
+vagrant apply 

@@ -1,0 +1,8 @@
+sudo yum install -y git
+sudo yum install -y wget
+sudo yum install -y unzip
+sudo useradd jenkins
+git clone https://github.com/bob-crutchley/python-systemd-http-server
+cd python-systemd-http-server
+sudo make install
+sudo systemctl start python-systemd-http-server

@@ -19,3 +19,5 @@ with variables you can create a folder that passes the same data and then run th
 terraform apply -var-file=variables/jenkins.tfvar
 jenkins can be named anything 
 it is best practice to put these files in a seperate folder
+
+when you make a new project you need to activate the compute api

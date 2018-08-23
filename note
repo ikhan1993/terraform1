@@ -12,3 +12,6 @@ vagrant apply
 if you have a server check rules to access it via the web
 go to vpc network and add rule
 then edit instance to follow the rule
+
+when working with variable you can pass data to them as following 
+terraform apply -var "name=jenkins"

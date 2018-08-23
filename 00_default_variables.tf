@@ -1,6 +1,16 @@
 // creating variable to be used in 02
 // default is the value that is being replace in 02
 
+variable "path" {
+	type = "string"
+	default = "/vagrant/gcpqa-214108-8f40765d258d.json"
+}
+
+variable "project-id" {
+	type = "string"
+	default = "gcpqa-214108"
+}
+
 variable "name" {
 	type = "string"
 	default = "default-test"

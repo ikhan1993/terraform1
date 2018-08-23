@@ -1,2 +1,5 @@
-name = "jenkins"
-username = "user-1"
+name = "python-server"
+username = "python"
+script_list = [
+	"scripts/python-server"
+]

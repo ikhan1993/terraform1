@@ -1,1 +1,2 @@
-name = jenkins
+name = "jenkins"
+username = "user-1"

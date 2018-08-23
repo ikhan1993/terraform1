@@ -17,6 +17,8 @@ resource "google_compute_instance" "default" {
 		}
 	}
 	
+	tags = ["${var.name}"]  // list for tags for networking
+	
 	// creating a way to ssh into the machine of user terraform
 	metadata {
 		sshKeys = "${var.username}:${file("~/.ssh/id_rsa.pub")}"

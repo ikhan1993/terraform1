@@ -39,8 +39,20 @@ variable "ssh" {
 // below is for a list 
 variable "script_list" {
 	default = [
-	//	"scripts/python-server",
+		"scripts/python-server",
 		"scripts/file2",
 		"scripts/file1"
+	]
+}
+
+variable "allowed_ports" {
+	default = [
+		"9000"
+	]
+}
+
+variable "ip_all" {
+	default = [
+		"0.0.0.0/0"
 	]
 }

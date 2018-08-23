@@ -39,7 +39,7 @@ variable "ssh" {
 // below is for a list 
 variable "script_list" {
 	default = [
-		"scripts/python-server",
+	//	"scripts/python-server",
 		"scripts/file2",
 		"scripts/file1"
 	]

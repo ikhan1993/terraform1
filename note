@@ -15,3 +15,7 @@ then edit instance to follow the rule
 
 when working with variable you can pass data to them as following 
 terraform apply -var "name=jenkins"
+with variables you can create a folder that passes the same data and then run the following 
+terraform apply -var-file=variables/jenkins.tfvar
+jenkins can be named anything 
+it is best practice to put these files in a seperate folder

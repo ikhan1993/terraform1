@@ -1,5 +1,8 @@
-name = "python-server"
-username = "python"
+name = "jenkins-server"
+username = "jenkins"
 script_list = [
-	"scripts/python-server"
+	"scripts/jenkins-install"
+]
+allowed_ports = [
+	"8080"
 ]
